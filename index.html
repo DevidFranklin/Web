@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/clanela.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lightslider.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="lightslider.js"></script>
+    <title>Clanela</title>
+</head>
+<body>
+<!--navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">
+            <img src="assets/output-onlinepngtools.png" width="60" height="60">
+        </a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link arial" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link arial" onclick="about()">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--content-->
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center mt-5">
+            <h1>Our Product</h1>
+        </div>
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="assets/nora-shirt.jpeg" alt="" />
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Nora Shirt</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="assets/emilia-shirt.jpeg" alt="" />
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Emilia Shirt</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="assets/haura-long-tunik.jpeg" alt="" />
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Haura Long Tunik</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="assets/kalila-shirt.jpeg" alt="" />
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Kalila Shirt</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="assets/cheera-top.jpeg" alt="" />
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Cheera Top</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="assets/asheera-skirt.jpeg" alt="" />
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Asheera Skirt</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <script type="text/javascript" src="script.js"></script>
+        <div class="d-flex justify-content-center mt-5 mb-4">
+            <h1>About</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-4 justify-content-center">
+                <img id="About" src="assets/clanela.png" class="img-fluid" width="400" height="400">
+            </div>
+            <div class="col-md-5">
+                <h3>CLANELA.ID</h3>
+                <p>
+                    Merupakan Brand yang menjual pakaian khusus untuk wanita yang berdiri pada tahun 2021. Produk yang kami
+                    berikan merupakan pakaian yang mengikuti trend yang memiliki ciri khas tersendiri sehingga customer
+                    tertarik untuk membeli produk Clanela.id.​ Dengan harga terjangkau customer bisa mendapatkan kualitas
+                    premium.
+                </p>
+            </div>
+        </div>
+    <!--footer-->
+        <footer>
+            <div class="container" style="padding: 20px 0;" align="center">
+                <a href="https://wa.me/6281221608825?text=clanela.id" target="_blank">
+                    <i class="fa fa-whatsapp fa-lg white-text mx-2"></i>
+                </a>
+                <a href="https://www.instagram.com/clanela.id/" target="_blank">
+                    <i class="fa fa-instagram fa-lg white-text mx-2"></i>
+                </a>
+            </div>
+            <div style="background: #F1E0B0;">
+                <p style="color: #91BEC2; padding: 15px 0;" align="center">
+                    &copy; 2022 Copyright: Clanela.id
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
